@@ -14,7 +14,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM id");
 <body>
 <a href="add.php">Add New User</a><br/><br/>
  
-    <table width='80%' border=1>
+    <table width='80%' border=3>
  
     <tr>
         <th>No</th>
@@ -27,7 +27,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM id");
     </tr>
     <?php  
     while($user_data = mysqli_fetch_array($result)) {    
-        $no = 1;     
+          
         echo "<tr>";
         echo "<td>".$user_data['id']."</td>";
         echo "<td>".$user_data['nim']."</td>";
